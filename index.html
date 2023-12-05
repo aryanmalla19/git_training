@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "Aryan"
+        let x = 1.1
+        let isTrue = true
+        let names =["Aryan", "Malla", 10, isTrue]
+        let person = {
+            first_name:"Aryan",
+            last_name:"Malla",
+            array:names
+        }
+
+        console.log(name)
+        console.log(x)
+        console.log(isTrue)
+        console.log(names)
+        console.log(person)
+
+        if(isTrue){
+            console.log("OPEN !!!")
+        }else{
+            console.log("CLOSE !!!")
+        }
+
+        function add(a,b){
+            return a+b
+        }
+        const mul = (a,b) => a*b
+        const add2 = add
+        const sub = (a,b)=>{
+            return a-b
+        }
+        const div = (a,b) => a/b
+        console.log(add2(2,3))
+        console.log(sub(2,3))
+        console.log(mul(2,3))
+        console.log(div(10,3))
+
+        for(let i=1; i<100; i++){
+            t=0
+            for (let j=1;j<i;j++){
+                if(i%j==0){
+                    t=t+1
+                }
+            }
+            if(t==1){
+                console.log(i)
+            }
+        }
+
+        let numbers = [1,2,3,4,5,6,7,8,9]
+        let odd_numbers = numbers.filter((a)=> {
+            return a%2 == 1
+        })
+        let even_numbers = numbers.filter((a)=> {
+            return a%2 == 0
+        }
+            )
+        console.log(odd_numbers)
+        console.log(even_numbers)
+
+        const add_hundred = (a) => a+100
+        let new_num = numbers.map(add_hundred)
+        console.log(new_num)
+
+    </script>
+</body>
+</html>
